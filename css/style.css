@@ -1,0 +1,159 @@
+body {
+	font-family: Gravity, sans-serif;
+  /*padding-top: 400px;*/
+	}
+
+p {
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  width: 1200px;
+  position: absolute;
+  z-index: 999;
+}
+
+.meerweten {
+  background-color: #fffaef;
+  padding: 50px;
+}
+
+.jarig {
+  background-color: #ff5065;
+  padding: 50px;
+}
+
+.nieuws {
+  background-color: #b2b2b2;
+  padding: 50px;
+}
+
+footer {
+  background: lightblue;
+  padding: 50px;
+}
+main, section, article, footer {
+  overflow: auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;  
+}
+
+.logo {
+  float: left;
+  margin: 5px;
+  margin-left: 45px;
+}
+
+.hoofdmenu {
+  float: right;
+  width: 500px;
+  color: #fffaef;
+ 
+} 
+
+.hoofdmenu ul li {
+  float: left;
+  list-style: none;
+  padding: 0px;
+}
+
+.hoofdmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+.voorstellingen {
+  float: left;
+  width: 60%;
+  padding: 50px;
+}
+
+.asidelinks {
+  float: left;
+  padding: 50px;
+}
+
+.asiderechts {
+  float: right;
+  padding: 50px;
+}
+
+.mySlides {
+  display:none;
+}
+ 
+.siema {
+  max-width: 1200px;
+  z-index: 10;
+}
+
+.titelbanner {
+  text-align: center;
+}
+
+.textmeerweten {
+  margin-top: 50px;
+}
+
+.textjarig {
+  margin-top: 50px;
+  width: 60%;
+  float: left;
+}
+
+.slider{
+  position: relative;
+}
+
+.links, .rechts{
+  position: absolute;
+  top: 300px;
+}
+
+.links{
+  left: 32px;
+}
+
+.rechts{
+  right: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
