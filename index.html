@@ -8,21 +8,27 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/siema.min.js"></script>
 </head>
+<!-- Wanneer de site is geladen wordt de kalender meegeladen -->
 <body>
 	<div class="container">
+
+		<!-- Navigatie -->
 		<header>
 			<div class="logo">
-				<a href="#"><img src="img/logo.png" alt="Home Imperium Theather" height="70" width="82"></a>
+				<a href="index.html"><img src="img/logo.png" alt="Home Imperium Theather" height="70" width="82"></a>
 			</div> 
 			<nav class="hoofdmenu">
 				<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Agenda</a></li>
-				<li><a href="#">Toneelvereniging</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="over-ons.html">Over ons</a></li>
+		        <li><a href="leden.html">Leden</a></li>
+		        <li><a href="lid-worden.html">Lid Worden</a></li>
+		        <li><a href="archief.html">Archief</a></li>
+		        <li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
+
+		<!-- Slider -->
 		<section class="slider">		
 			<div class="siema">
 				<div><img class="slideimg" src="img/zaalfoto.jpg"></div>
@@ -32,7 +38,10 @@
 			<button class="links">Links</button>
 			<button class="rechts">Rechts</button>
 		</section>		
+
 		<main>
+
+			<!-- Blok met introductie -->
 			<section class="meerweten">
 			  	<h1 class="titelbanner">Welkom bij Theatergroep Imperium</h1>
 				<aside class="asidelinks">
@@ -41,6 +50,7 @@
 				<p class="textmeerweten">Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen.</p>
 			</section>
 
+			<!-- Lustrum tekst -->
 			<section class="jarig">
 			  <h1>Theatergroep Imperium bestaat 60 jaar!</h1>
 			  &nbsp;
@@ -73,10 +83,11 @@
 				</aside>
 			</section>
 
+			<!-- Nieuwsbrief tekst -->
 			<section class="nieuws">
 			  <h1>Nieuwsbrief</h1>
-			  &nbsp;
-			  	<p class="textjarig">
+			  	&nbsp;
+			  	<p class="textnieuws">
 			  		Wilt u op de hoogte gehouden worden van Toneelgroep Imperium?
 					Als u hier uw gegevens opgeeft, dan krijgt u enkele weken voor elke première bericht met informatie over de voorstelling en de mogelijkheid te reserveren.
 					<br/>
@@ -87,40 +98,112 @@
 					&nbsp;
 					<br/>
 					Uw email adres zal alleen worden gebruikt voor het versturen van nieuwsbrieven van en over Toneelgroep Imperium.
-
 				</p>
 				<aside class="asiderechts">
-					
+					<!--De kalender heeft op dit moment geen toegevoegde waarden voor de site. Het was de 
+						bedoeling dat de repetities een highlight kregen op de dagen en wanneer er op geklikt wordt
+						het vergroot en er staat wat er die dag speelt.	
+					<div class="month">      
+						<ul>
+						<li class="prev">&#10094;</li>
+						<li class="next">&#10095;</li>
+						<li>
+						Repetities April<br>
+						<span style="font-size:18px">2018</span>
+						</li>
+						</ul>
+						</div>
+
+						<ul class="weekdays">
+						<li>Mo</li>
+						<li>Tu</li>
+						<li>We</li>
+						<li>Th</li>
+						<li>Fr</li>
+						<li>Sa</li>
+						<li>Su</li>
+						</ul>
+
+						<ul class="days">  
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li><span class="active">10</span></li>
+						<li>11</li>
+						<li>12</li>
+						<li>13</li>
+						<li>14</li>
+						<li>15</li>
+						<li>16</li>
+						<li>17</li>
+						<li>18</li>
+						<li>19</li>
+						<li>20</li>
+						<li>21</li>
+						<li>22</li>
+						<li>23</li>
+						<li>24</li>
+						<li>25</li>
+						<li>26</li>
+						<li>27</li>
+						<li>28</li>
+						<li>29</li>
+						<li>30</li>
+						<li>31</li>
+						</ul>-->
 				</aside>
 			</section>
 			
-			<section class="voorstellingen">
-			  <h1>Voorstellingen deze week</h1>
-			  <ul class="voorstellingenlist">
-			    <li>
-			      <h1>Theatervoorstelling</h1>
-			      <p>Dit is een hele leuke voorstelling</p>
-			    </li>
-			    <li>
-			      <h1>Theatervoorstelling 2</h1>
-			      <p>Dit is een nog leukere voorstelling</p>
-			    </li>
-			  </ul>
+			<!-- Nieuwsbrief formulier -->
+			<section class="subscribe">
+			    <h3>Emailadres</h3>
+			    <br>
+			    <form action="index.html" method="post" class="subscribe-form">
+				    <input type="email" name="email" placeholder="Voer hier uw email in">
+				    <button type="submit" class="email-submit">Verstuur</button>
+			    </form>
 			</section>
-			
-			<aside>
-			  <article class="leden">
-			    <h1>Ledendag 1 april</h1>
-			    <p>Op 1 april staat de nieuwe ledendag gepland<p>
-			  </article>
-			</aside>
+
+			<section class="lidworden">
+				<h1 class="bannerlidtekst">Meteen lid worden van dit fantastisch team?</h1>
+				<button class="link-submit"><a class ="linkbanner" href="#">Bekijk ons formulier</a></button>
+			</section>
+
+			<section class="teambanner">
+				<img src="img/team.png">
+			</section>
 		</main>
 
 		<footer>
-			<h2>Inschrijven Nieuwsbrief</h2>
-			<form method="GET" id="nieuwsbrief">
-
-			</form>
+			<div class="row">
+				<div class="column">
+					<nav class="footer-menu">
+						<a href="over-ons.html">Over ons</a>
+						<a href="leden.html">Leden</a>
+						<a href="lid-worden.html">Lid Worden</a>
+						<a href="archief.html">Archief</a>
+						<a href="contact.html">Contact</a>
+					</nav>
+				</div>
+				<div class="column">
+					<h2 class="centerh2">Social media</h2>
+					<a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="SMWimg" src="img/facebook.png" alt="Like ons op facebook" height="60" width="55" /></a>
+					<a href="https://twitter.com/imperiumtheater"><img class="SMWimg" src="img/twitter.png" alt="Volg ons op twitter" height="60" width="55" /></a>
+				</div>
+				<div class="column">
+					<ul class="contactfooter">
+						<li class="nummericon">071 5141035</li>
+						<li class="mailicon"><a class="linkmailto" href="mailto:info@imperium.nl">info@imperium.nl</a></li>
+						<li class="adresicon">Oude Vest 33e<br>2312 XR Leiden</li>
+					</ul>
+				</div>
+			</div>
 		<footer>
 	</div>	
 </body>

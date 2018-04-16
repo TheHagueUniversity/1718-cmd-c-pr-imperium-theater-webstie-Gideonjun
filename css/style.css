@@ -38,12 +38,77 @@ header {
 .nieuws {
   background-color: #b2b2b2;
   padding: 50px;
+  float: left;
 }
 
 footer {
-  background: lightblue;
-  padding: 50px;
+  background: #444444;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
+
+.nummericon {
+  list-style-image: url('img/bellen.png');
+  color: #FFFAEF;
+}
+
+.mailicon {
+  list-style-image: url('img/email.png');
+}
+
+.adresicon {
+  list-style-image: url('img/locatie.png');
+  color: #FFFAEF;
+}
+
+.centerh2 {
+  text-align: center;
+  color: #fffaef;
+}
+
+.SMWrapper {
+
+}
+
+.SMWimg {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  margin-right: 5px;
+}
+
+.righth2 {
+  text-align: right;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    height: 171px; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-menu {
+  width: 200px;
+}
+
+.footer-menu a {
+  color: #C0EAFF;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #1CB0F6;
+}
+
 main, section, article, footer {
   overflow: auto;
 }
@@ -60,7 +125,7 @@ main, section, article, footer {
 
 .hoofdmenu {
   float: right;
-  width: 500px;
+  width: 550px;
   color: #fffaef;
  
 } 
@@ -73,10 +138,14 @@ main, section, article, footer {
 
 .hoofdmenu li a {
     display: block;
-    color: white;
+    color: #fffaef;
     text-align: center;
     padding: 30px 16px;
     text-decoration: none;
+}
+
+.hoofdmenu li a:hover {
+    color: #C0EAFF;
 }
 
 .voorstellingen {
@@ -87,7 +156,9 @@ main, section, article, footer {
 
 .asidelinks {
   float: left;
-  padding: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .asiderechts {
@@ -104,9 +175,7 @@ main, section, article, footer {
   z-index: 10;
 }
 
-.titelbanner {
-  text-align: center;
-}
+
 
 .textmeerweten {
   margin-top: 50px;
@@ -118,7 +187,17 @@ main, section, article, footer {
   float: left;
 }
 
+.textnieuws {
+  margin-top: 50px;
+  width: 50%;
+  float: left;
+}
+
 .slider{
+  position: relative;
+}
+
+.menuachtergrond{
   position: relative;
 }
 
@@ -135,6 +214,157 @@ main, section, article, footer {
   right: 32px;
 }
 
+.subscribe {
+  background-color: #b2b2b2;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+input[type=email] {
+    width: 260px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.email-submit {
+    width: 115px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.email-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+.lidworden {
+  background-color: rgba(255, 250, 239, 0.5);
+  overflow: auto;
+  width: 1200px;
+  height: 149px;
+  margin-top: 301px;
+  position: absolute;
+  z-index: 999;
+}
+
+.contactfooter {
+  float: right;
+}
+
+.bannerlidtekst {
+  color: #000;
+  text-align: center;
+  padding: 25px;
+}
+
+.linkbanner {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkmailto {
+  color: #1CB0F6;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkmailto:hover {
+  color: #C0EAFF;
+}
+
+.link-submit {
+    width: 220px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* KALENDER 
+
+.month {
+    
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+*/
 
 
 
