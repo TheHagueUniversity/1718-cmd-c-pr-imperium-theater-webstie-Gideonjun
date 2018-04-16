@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Gravity";
+  src:local("../font/gravity/Gravity-Regular.otf");
+  src:local("../font/gravity/Gravity-Bold.otf");
+}
+
 body {
-	font-family: Gravity, sans-serif;
+  font-family: Gravity, sans-serif;
   /*padding-top: 400px;*/
 	}
 
