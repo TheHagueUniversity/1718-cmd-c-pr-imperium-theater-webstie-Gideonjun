@@ -605,6 +605,10 @@ a {
     cursor: pointer;
 }
 
+.over-submit a {
+  color: #fff;
+}
+
 .leden-submit {
     width: 220px;
     background-color: #1CB0F6;
