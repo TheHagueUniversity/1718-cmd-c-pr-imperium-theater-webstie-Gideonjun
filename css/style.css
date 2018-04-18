@@ -545,8 +545,8 @@ input::-webkit-inner-spin-button {
 
 /* link voor de banner op de homepagina en hover */
 
-.linkbanner {
-  color: #fff;
+a {
+  color: #000;
   text-decoration: none;
   font-size: 12pt;
 }
@@ -589,6 +589,10 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.link-submit a {
+  color: #fff;
+}
+
 .over-submit {
     width: 220px;
     background-color: #1CB0F6;
@@ -610,6 +614,10 @@ input::-webkit-inner-spin-button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.leden-submit a {
+  color: #fff;
 }
 
 /* hover kleuren */
