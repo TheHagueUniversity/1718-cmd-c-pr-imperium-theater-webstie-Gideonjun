@@ -16,19 +16,19 @@ window.onload = function(){
 		onInit: () => {},
 		onChange: () => {},
 	});	
-
+	//Dit zorgt ervoor dat de gebruiker terug kan
 	document.getElementsByClassName('links')[0].onclick = function(){
 		slideshow.prev(1);
 		clearTimeout(timeout);
 		loop();
 	};
-
+	//Dit zorgt ervoor dat de gebruiker naar de volgende slide kan
 	document.getElementsByClassName('rechts')[0].onclick = function(){
 		slideshow.next(1);
 		clearTimeout(timeout);
 		loop();
 	};
-
+	//Dit loopt de slider 
 	function loop (){
 		timeout = setTimeout(function(){
 			slideshow.next(1);

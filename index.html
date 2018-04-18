@@ -28,29 +28,32 @@
 			</nav>
 		</header>
 
-		<!-- Slider -->
+		<!-- Slider die gelinkt is met een javascript bestand. Het is me niet gelukt om voor eke slide een ander soort tekst in de slider te verwerken zonder de slider te breken -->
 		<section class="slider">		
 			<div class="siema">
-				<div><img class="slideimg" src="img/zaalfoto.jpg"></div>
-				<div><img class="slideimg" src="img/zaalfoto.jpg"></div>
-				<div><img class="slideimg" src="img/zaalfoto.jpg"></div>
+				<div><img class="slideimg" src="img/zaalfoto.jpg"><h1 class="slideimg" id="centered">Imperium Theater bestaat 60 jaar!
+				</h1></div>
+				<div><img class="slideimg" src="img/zaalfoto.jpg"><h1 class="slideimg" id="centered"></h1></div>
+				<div><img class="slideimg" src="img/zaalfoto.jpg"><h1 class="slideimg" id="centered">
+</h1></div>
 			</div>
-			<button class="links">Links</button>
-			<button class="rechts">Rechts</button>
+			<button class="links">&#8249;</button>
+			<button class="rechts">&#8250;</button>
 		</section>		
 
 		<main>
 
 			<!-- Blok met introductie -->
 			<section class="meerweten">
-			  	<h1 class="titelbanner">Welkom bij Theatergroep Imperium</h1>
+			  	<h1>Welkom bij Theatergroep Imperium</h1>
 				<aside class="asidelinks">
 					<img src="img/vrede.jpg" height="180" width="270">
 				</aside>
 				<p class="textmeerweten">Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen.</p>
+				<button class="ghost-submit"><a class ="linkbanner2" href="over-ons.html">Kom meer te weten</a></button>
 			</section>
 
-			<!-- Lustrum tekst -->
+			<!-- Lustrum tekst met afbeelding ernaast -->
 			<section class="jarig">
 			  <h1>Theatergroep Imperium bestaat 60 jaar!</h1>
 			  &nbsp;
@@ -160,19 +163,19 @@
 				</aside>
 			</section>
 			
-			<!-- Nieuwsbrief formulier -->
+			<!-- Nieuwsbrief formulier. Wanneer het ingevuld is wordt de gebruiker naar de bedanktpagina gestuurd -->
 			<section class="subscribe">
 			    <h3>Emailadres</h3>
 			    <br>
-			    <form action="index.html" method="post" class="subscribe-form">
-				    <input type="email" name="email" placeholder="Voer hier uw email in">
+			    <form action="bedankt.html" method="post" class="subscribe-form">
+				    <input class="emailhome" type="email" name="email" placeholder="Voer hier uw email in" required>
 				    <button type="submit" class="email-submit">Verstuur</button>
 			    </form>
 			</section>
 
 			<section class="lidworden">
 				<h1 class="bannerlidtekst">Meteen lid worden van dit fantastisch team?</h1>
-				<button class="link-submit"><a class ="linkbanner" href="#">Bekijk ons formulier</a></button>
+				<button class="link-submit"><a class ="linkbanner" href="lid-worden.html">Bekijk ons formulier</a></button>
 			</section>
 
 			<section class="teambanner">
@@ -180,31 +183,33 @@
 			</section>
 		</main>
 
-		<footer>
-			<div class="row">
-				<div class="column">
-					<nav class="footer-menu">
-						<a href="over-ons.html">Over ons</a>
-						<a href="leden.html">Leden</a>
-						<a href="lid-worden.html">Lid Worden</a>
-						<a href="archief.html">Archief</a>
-						<a href="contact.html">Contact</a>
-					</nav>
-				</div>
-				<div class="column">
-					<h2 class="centerh2">Social media</h2>
-					<a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="SMWimg" src="img/facebook.png" alt="Like ons op facebook" height="60" width="55" /></a>
-					<a href="https://twitter.com/imperiumtheater"><img class="SMWimg" src="img/twitter.png" alt="Volg ons op twitter" height="60" width="55" /></a>
-				</div>
-				<div class="column">
-					<ul class="contactfooter">
-						<li class="nummericon">071 5141035</li>
-						<li class="mailicon"><a class="linkmailto" href="mailto:info@imperium.nl">info@imperium.nl</a></li>
-						<li class="adresicon">Oude Vest 33e<br>2312 XR Leiden</li>
-					</ul>
-				</div>
-			</div>
-		<footer>
+		<!-- In deze footer komen de links weer terug van de navigatie. De e-mailtekst is een button die automatisch een mail opzet. -->
+	<footer>
+      <div class="row">
+        <div class="column">
+          <nav class="footer-menu">
+            <a href="over-ons.html">Over ons</a>
+            <a href="leden.html">Leden</a>
+            <a href="lid-worden.html">Lid Worden</a>
+            <a href="archief.html">Archief</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="column">
+          <h2 class="centerh2">Social media</h2>
+          <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="SMWimg" src="img/facebook.png" alt="Like ons op facebook" height="60" width="55" /></a>
+          <a href="https://twitter.com/imperiumtheater"><img src="img/twitter.png" alt="Volg ons op twitter" height="60" width="55" /></a>
+        </div>
+        <div class="column">
+          <ul class="contactfooter">
+            <li><img src="img/bellen.png" width="19px" height="19px">&nbsp;071 5141035</li>
+            <li><img src="img/email.png" width="19px" height="19px">&nbsp;<a class="linkmailto" href="mailto:info@imperium.nl">info@imperium.nl</a></li>
+            <li><img src="img/locatie.png" width="19px" height="24px">&nbsp;Oude Vest 33e 2312 XR Leiden</li>
+          </ul>
+        </div>
+      </div>
+    <footer>
+
 	</div>	
 </body>
 </html>

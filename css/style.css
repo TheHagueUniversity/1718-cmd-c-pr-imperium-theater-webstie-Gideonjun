@@ -1,3 +1,5 @@
+/* Met font face pak ik het font van de site vanuit een lokale map. Dit zorgt ervoor dat de site niet in Times New Roman eindigd. */
+
 @font-face {
   font-family: "Gravity";
   src:local("../font/gravity/Gravity-Regular.otf");
@@ -9,14 +11,26 @@ body {
   /*padding-top: 400px;*/
 	}
 
+/* Losse styling */
+
+.bodybedankt {
+  background-color: #fffaef;
+  padding: 50px;
+}
+
 p {
   font-size: 13px;
+}
+
+.aarchief {
+  text-decoration: none;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 header {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
@@ -25,13 +39,30 @@ header {
   z-index: 999;
 }
 
+.leesmeer {
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  color: #1CB0F6;
+}
+
 .meerweten {
   background-color: #fffaef;
   padding: 50px;
 }
 
+.overonsintro {
+  background-color: #ff5065;
+  padding: 50px;
+}
+
 .jarig {
   background-color: #ff5065;
+  padding: 50px;
+}
+
+.overonsinfo {
+  background-color: #fffaef;
   padding: 50px;
 }
 
@@ -41,6 +72,20 @@ header {
   float: left;
 }
 
+.titelbanner {
+  color: #fffaef;
+  text-align: center;
+}
+
+.titelbanner2 {
+  color: #000;
+  text-align: center;
+}
+
+.titeltekst {
+  text-align: center;
+}
+
 footer {
   background: #444444;
   padding-top: 50px;
@@ -48,39 +93,44 @@ footer {
   padding-left: 50px;
 }
 
-.nummericon {
-  list-style-image: url('img/bellen.png');
-  color: #FFFAEF;
-}
-
-.mailicon {
-  list-style-image: url('img/email.png');
-}
-
-.adresicon {
-  list-style-image: url('img/locatie.png');
-  color: #FFFAEF;
-}
-
 .centerh2 {
   text-align: center;
   color: #fffaef;
 }
 
-.SMWrapper {
+.centerh21 {
+  color: #000;
+  margin-left: 20px;
+}
 
+.centerh22 {
+  text-align: center;
+  color: #000;
 }
 
 .SMWimg {
   display: block;
   margin: 0 auto;
   float: left;
-  margin-right: 5px;
+  margin-left: 130px;
+}
+
+.SMWimg2 {
+  display: block;
+  margin: 0 auto;
+  float: left;
 }
 
 .righth2 {
   text-align: right;
 }
+
+#map {
+  width:100%;
+  height:400px;
+}
+
+/* Deze columns zijn voor de verschillende blokken in de site */
 
 .column {
     float: left;
@@ -88,11 +138,81 @@ footer {
     height: 171px; 
 }
 
+.column2 {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33%; 
+}
+
+.column3 {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%; 
+}
+
+.column4 {
+    float: left;
+    height: 350px;
+    padding: 20px;
+    padding-left: 22px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 33.33%; 
+}
+
+.column5 {
+    float: left;
+    height: 350px;
+    padding: 20px;
+    padding-left: 20px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 66.66%; 
+}
+
+.column6 {
+    float: left;
+    height: 670px;
+    padding: 20px;
+    padding-left: 34px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 33.33%; 
+}
+
+.column8 {
+  width: 66.66%;
+  float: left;
+  padding-right: 50px;
+}
+
+.column9 {
+  width: 33.33%;
+  float: left;
+}
+
+.img5 {
+  float: right;
+  margin-top: -123px;
+}
+
+.img6 {
+  float: right;
+  position: absolute;
+  margin-top: 85px;
+  line-height: 20px;
+  margin-left: 375px;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+/* footer menu styling */
 
 .footer-menu {
   width: 200px;
@@ -175,10 +295,35 @@ main, section, article, footer {
   z-index: 10;
 }
 
-
+.centerh1 {
+  text-align: center;
+}
 
 .textmeerweten {
   margin-top: 50px;
+}
+
+.textmeerweten2 {
+  margin-top: 50px;
+  color: #fffaef;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.textmeerweten3 {
+  margin-top: 50px;
+  color: #fffaef;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.textmeerweten4 {
+  margin-top: 50px;
+  color: #fffaef;
+  text-align: center;
+  font-size: 14pt;
 }
 
 .textjarig {
@@ -193,17 +338,49 @@ main, section, article, footer {
   float: left;
 }
 
-.slider{
+.textons {
+  margin-top: 30px;
+  padding-left: 10px;
+  float: left;
+}
+
+.textons2 {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 20px;
+  float: left;
+  color: #fffaef;
+}
+
+.slider {
   position: relative;
+}
+
+/* content van slider in het midden */
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 180px;
+    transform: translate(-50%, -50%);
+    color: #fffaef
 }
 
 .menuachtergrond{
   position: relative;
 }
 
+/* buttons in slider */
+
 .links, .rechts{
   position: absolute;
   top: 300px;
+  border-radius: 50%;
+  padding: 8px 14px;
+  background-color: #ff5065;
+  border: 1px solid #000;
+  outline: none;
 }
 
 .links{
@@ -221,7 +398,28 @@ main, section, article, footer {
   padding-bottom: 50px;
 }
 
-input[type=email] {
+.active {
+  color: #1CB0F6!important;
+}
+
+/* Dit zorgt voor de kleur aan de formulieren wanneer het formulier correct is ingevuld */
+
+input:required:valid {
+  border: 1px solid #7AC70C;
+}
+
+input:required:invalid {
+  border: 1px solid #ff5065;
+}
+
+/* Dit zorgt ervoor dat er geen spinwiel in de input type is */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.emailhome {
     width: 260px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -231,6 +429,33 @@ input[type=email] {
     box-sizing: border-box;
     outline:none;
     font-size: 12pt;
+}
+
+.typetextcontact {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.typetextlid {
+    width: 400px;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.typetextp {
+  margin-left: 360px;
 }
 
 .email-submit {
@@ -249,6 +474,29 @@ input[type=email] {
     background-color: #BC3C4D;  
 }
 
+.link-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+.lid-submit {
+    width: 150px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.lid-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+/* transparante banners over de afbeeldingen. Met z-index komen ze naar voren en de achtergrond heeft een opacity met rgba */
+
 .lidworden {
   background-color: rgba(255, 250, 239, 0.5);
   overflow: auto;
@@ -259,9 +507,29 @@ input[type=email] {
   z-index: 999;
 }
 
+.motivatieworden {
+  background-color: rgba(255, 80, 101, 0.5);
+  overflow: auto;
+  width: 1200px;
+  height: 305px;
+  margin-top: 305px;
+  position: absolute;
+  z-index: 999;
+}
+
+/* styling voor de contactinfo */
+
 .contactfooter {
   float: right;
+  list-style-type: none;
+  width: 205px;
 }
+
+.contactfooter li {
+  color: #fffaef;
+}
+
+/* banner met lid worden in de over ons pagina */
 
 .bannerlidtekst {
   color: #000;
@@ -269,11 +537,33 @@ input[type=email] {
   padding: 25px;
 }
 
+.bannerlidwordtekst {
+  color: #fffaef;
+  text-align: center;
+  padding: 25px;
+}
+
+/* link voor de banner op de homepagina en hover */
+
 .linkbanner {
   color: #fff;
   text-decoration: none;
   font-size: 12pt;
 }
+
+.linkbanner2 {
+  color: #000;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkbanner2:hover {
+  color: #ff5065;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* mailto link in de footer */
 
 .linkmailto {
   color: #1CB0F6;
@@ -284,6 +574,8 @@ input[type=email] {
 .linkmailto:hover {
   color: #C0EAFF;
 }
+
+/* submit buttons */
 
 .link-submit {
     width: 220px;
@@ -297,9 +589,57 @@ input[type=email] {
     cursor: pointer;
 }
 
+.over-submit {
+    width: 220px;
+    background-color: #1CB0F6;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.leden-submit {
+    width: 220px;
+    background-color: #1CB0F6;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* hover kleuren */
+
+.leden-submit:hover {
+  background-color: #147FB4;
+}
+
+.over-submit:hover {
+  background-color: #147FB4;
+}
+
+/* dit is voor de ghost button */
+
+.ghost-submit {
+    width: 220px;
+    background-color: #fffaef;
+    color: #000000;
+    padding: 14px 20px;
+    margin-top: 85px;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ff5065;
+}
 
 
-/* KALENDER 
+
+/* Dit stuk css was voor de kalender bedoelt.
 
 .month {
     
